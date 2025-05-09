@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+@keyframes example {
+    from {background-color: #F2F0FF;}
+    to {background-color: #836BFC;}
+}
+
+.active {
+    background: #836BFC;
+    color: white;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    animation: example;
+    animation-duration: 0.4s;
+}
