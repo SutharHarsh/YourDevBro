@@ -1,33 +1,39 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function ProjectCard({title, bgColor}) {
-    return (
-        <div>
-            {/* project cards */}
-            <div className='flex justify-center pb-20'>
-                {/* project card 1 */}
-                <div className={`bg-${bgColor} flex mb-10 justify-between items-center border-1 w-130 p-8 rounded-4xl shadow-[0_5px_0px_0px] cursor-pointer`}>
-                    {/* left part */}
-                    <div className='flex flex-col justify-between gap-20 pr-4'>
-                        <h1 className='text-3xl font-bold '>{title}</h1>
-                        {/* visit link */}
-                        <div className='flex items-center gap-2'>
-                            <img src="../public/link-arrow.png" alt="link-arrow" />
-                            <h1>Visit Project</h1>
-                        </div>
-                    </div>
-                    {/* right part */}
-                    <div>
-                        <img src="../public/illustration.png" alt="project vector"
-                            className='w-40'
-                        />
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    )
+function ProjectCard({ name, thumbnail, shortDescription, sourceCode }) {
+  return (
+    <div className="max-w-xs bg-green-100 border border-blue-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+      <Link to={sourceCode}>
+        <img
+          className="rounded-t-lg w-full h-40 object-cover"
+          src={thumbnail}
+          alt={name}
+        />
+      </Link>
+      <div className="p-4">
+        <h5 className="mb-1 text-xl font-semibold text-blue-800">{name}</h5>
+        <p className="mb-3 text-sm text-gray-600">{shortDescription}</p>
+        <Link
+          to={sourceCode}
+          className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-white bg-green-500 rounded hover:bg-green-600 transition-colors duration-200"
+        >
+          Source Code
+          <svg
+            className="w-4 h-4 ml-2 rtl:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 14 10"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M1 5h12m0 0L9 1m4 4L9 9" />
+          </svg>
+        </Link>
+      </div>
+    </div>
+  );
 }
 
-export default ProjectCard
+export default ProjectCard;
