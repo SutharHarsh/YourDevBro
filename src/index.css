@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  /* --breakpoint-*: initial; */
+  --breakpoint-sm: 425px;
+  --breakpoint-md: 800px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xs: 30rem;
+}
+
 body {
     font-family: "Space Grotesk", sans-serif;
 }
@@ -19,3 +27,7 @@ body {
     animation: example;
     animation-duration: 0.4s;
 }
+
+
+
+

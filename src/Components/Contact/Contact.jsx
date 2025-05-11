@@ -9,7 +9,7 @@ function Contact() {
       <Navbar />
       <PageTitle title="Contact Me" description="Got a question? Let's talk." />
 
-      <div className='px-20 text-center mb-10'>
+      <div className='px-20 text-center mb-20'>
         <h1 className='font-bold text-2xl'>Email:</h1>
         <p className='text-xl'>yourdevbro@gamil.com</p>
       </div>

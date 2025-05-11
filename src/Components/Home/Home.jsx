@@ -17,9 +17,9 @@ function Home() {
                     Ready-to-use projects you can learn from or launch fast.<br />Clean code, real features, no fluff.
                 </>} />
 
-            <div className='flex justify-center gap-20'>
-                <ProjectCard title="Prana Flow Website" bgColor="[#F3F3F3]" />
-                <ProjectCard title="YourDevBro Platform" bgColor="[#00FFA1]" />
+            <div className='flex lg:flex-row justify-center lg:gap-20 md:flex-col md:gap-0 sm:flex-col'>
+                <ProjectCard title="Netflix Clone" />
+                <ProjectCard title="YourDevBro" />
             </div>
             
             <Footer />

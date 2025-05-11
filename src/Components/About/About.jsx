@@ -10,7 +10,7 @@ function About() {
 
       <PageTitle title="About This Site" description="If it works for me, it might just work for you." />
 
-      <div className='px-20 pt-10 pb-20'>
+      <div className='lg:px-20 md:px-20 pt-10 pb-20 sm:px-5 sm:text-justify'>
         Hi there! 👋 <br />
         Welcome to a space built for developers who love clean code, real projects, and zero-nonsense learning. <br /><br />
 
@@ -19,7 +19,7 @@ function About() {
         Whether you're a beginner figuring out flexbox or a seasoned dev tired of rewriting the same login form for the 10th time — you're in the right place.<br /><br />
 
         <h1 className='text-lg font-bold pb-2'>🎯 What You’ll Find Here:</h1>
-        <ul className='px-10 list-disc'>
+        <ul className='lg:px-10 md:px-10 list-disc sm:text-left sm:pr-5 sm:pl-10'>
           <li>💡 Handy snippets for HTML, CSS, JavaScript, and more</li>
           <li>🚀 Beginner to intermediate projects you can clone or tweak</li>
           <li>🛠️ Tools and templates that save you time</li>
