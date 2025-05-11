@@ -4,6 +4,8 @@ import About from './Components/About/About'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import ProjectPage from './Components/Projects/ProjectPage'
 import Contact from './Components/Contact/Contact'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
 

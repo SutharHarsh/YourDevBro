@@ -2,8 +2,9 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import ProjectCard from '../Projects/ProjectCard'
+// import ProjectCard from '../Projects/ProjectCard'
 import PageTitle from '../PageTitle'
+import ProjectCarousel from '../Projects/ProjectCarousel'
 
 function Home() {
     return (
@@ -18,8 +19,10 @@ function Home() {
                 </>} />
 
             <div className='flex justify-center gap-20'>
-                <ProjectCard title="Prana Flow Website" bgColor="[#F3F3F3]" />
-                <ProjectCard title="YourDevBro Platform" bgColor="[#00FFA1]" />
+                {/* <ProjectCard title="Prana Flow Website" bgColor="[#F3F3F3]" />
+                <ProjectCard title="YourDevBro Platform" bgColor="[#00FFA1]" /> */}
+
+                <ProjectCarousel/>
             </div>
             
             <Footer />
