@@ -11,15 +11,15 @@ function Header() {
                     <h1>I BROKE IT</h1>
                     <h1>I FIXED IT</h1>
                     <h1>I MADE IT PRETTY</h1>
-                    <h1 className='lg:text-3xl font-bold pt-2 text-[#190266] sm:text-xl'>- JUST COPY IT LIKE A LEGEND</h1>
+                    <h1 className='lg:text-4xl md:text-4xl font-bold pt-2 text-[#190266] sm:text-xl'>- JUST COPY IT LIKE A LEGEND</h1>
                 </div>
                 {/* Heading 2 */}
                 <div className='lg:text-left lg:px-0 lg:pt-8 lg:pr-15 md:text-center md:px-20 md:text-xl md:pt-10 sm:text-center sm:px-5 sm:py-8'>
                     <p>Hundreds of hours spent debugging, researching, and rewriting — all distilled into clean, reusable code snippets.<br /><br /> Whether you're building your first navbar or your fiftieth dashboard, this is where real dev work meets real shortcuts.</p>
                 </div>
 
-                    <Link to="/projects" className='flex lg:justify-start md:justify-center md:pt-12 sm:justify-center'>
-                        <button className='bg-black text-white p-2 px-4 font-bold rounded-lg hover:bg-[#836BFC] duration-200 hover:text-lg animate-bounce cursor-pointer'>Explore Projects</button>
+                    <Link to="/projects" className='flex lg:justify-start md:justify-center md:pt-12 lg:pt-5 sm:justify-center'>
+                        <button className='bg-black text-white p-2 px-4 font-bold rounded-lg hover:bg-[#836BFC] duration-200 hover:text-lg animate-bounce  lg:cursor-pointer'>Explore Projects</button>
                     </Link>
 
 
